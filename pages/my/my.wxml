@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="fabu_items" wx:for='{{dataLists}}' wx:key='{{item._id}}'>
+    <text>{{item.text}}</text>
+    <view class="image_items">
+      <image wx:for='{{item.fileIDs}}' wx:for-item='fileid' wx:key='{{fileid}}' src="{{fileid}}" mode="aspectFill"></image>
+    </view>
+  </view>
+  <text wx:if='{{dataLists.length==0}}'>还没有发布过，赶快去发布你的第一条动态吧...</text>
+</view>

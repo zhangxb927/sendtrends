@@ -1,0 +1,13 @@
+<view class="fabu">
+  <textarea class="fabu_text" placeholder="这一刻的想法..." bindinput="fabu_text" value="{{text}}"></textarea>
+  <view class="fabu_image">
+    <view class="image_item" wx:if='{{imageLists.length>0}}' wx:for='{{imageLists}}' wx:key='{{item}}' >
+      <image mode="aspectFill" src="{{item}}" class="item_image"></image>
+      <image src="../../images/chose.png" class="close_image" bindtap="closeImage" data-fileid='{{item}}'></image>
+    </view>
+    <view class="add_wraper" bindtap="addImage">
+      <image src="../../images/add.png" class="add_image"></image>
+    </view>
+  </view>
+  <button type="primary" bindtap="saveData">发表</button>
+</view>

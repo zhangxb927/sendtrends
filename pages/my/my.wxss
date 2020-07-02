@@ -1,0 +1,17 @@
+.container{
+  margin: 40rpx;
+}
+.fabu_items{
+  border-bottom: 1rpx solid black;
+  margin: 20rpx 0;
+}
+.image_items{
+  width: 100%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.image_items image{
+  width: 33%;
+  height: 222rpx;
+  margin-right: 0.3%;
+}
